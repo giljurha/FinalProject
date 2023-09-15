@@ -62,7 +62,6 @@ class MyInfoFragment : Fragment() {
             updateText.setOnClickListener {
                 mainActivity.replaceFragment(UpdateMyInfoFragment())
             }
-
         }
 
         return fragmentMyInfoBinding.root
