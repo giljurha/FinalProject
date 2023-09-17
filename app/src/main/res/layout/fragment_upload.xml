@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,26 +8,30 @@
     tools:context=".ui.upload.UploadFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbar3"
+        android:id="@+id/materialToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:adjustViewBounds="true"
-        android:layout_marginTop="30dp"
-
-        tools:src="@tools:sample/avatars" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/materialToolbar" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:endIconMode="none">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:endIconMode="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageView">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -35,4 +39,4 @@
             android:drawableEnd="@drawable/baseline_arrow_circle_right_24"
             android:hint="내용을 입력해주세요" />
     </com.google.android.material.textfield.TextInputLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
