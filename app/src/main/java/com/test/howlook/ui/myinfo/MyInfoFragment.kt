@@ -22,7 +22,7 @@ class MyInfoFragment : Fragment() {
 
         fragmentMyInfoBinding = FragmentMyInfoBinding.inflate(layoutInflater)
         val mainActivity = activity as MainActivity
-        val mainActivity1 = MainActivity()
+
         val builder = AlertDialog.Builder(mainActivity)
 
         fragmentMyInfoBinding.run {
