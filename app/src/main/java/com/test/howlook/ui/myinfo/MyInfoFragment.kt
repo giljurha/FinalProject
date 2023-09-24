@@ -21,8 +21,8 @@ class MyInfoFragment : Fragment() {
     ): View? {
 
         fragmentMyInfoBinding = FragmentMyInfoBinding.inflate(layoutInflater)
-        val mainActivity = activity as MainActivity
 
+        val mainActivity = activity as MainActivity
         val builder = AlertDialog.Builder(mainActivity)
 
         fragmentMyInfoBinding.run {
@@ -30,15 +30,16 @@ class MyInfoFragment : Fragment() {
                 builder.run{
                     setTitle("로그아웃")
                     setMessage("정말 로그아웃 하시겠습니까?")
+                    setPositiveButton("네"){d: DialogInterface, i: Int ->
+
+                    }
                     setPositiveButton("네"){ dialogInterface: DialogInterface, i: Int ->
 
                     }
                     setNegativeButton("아니오"){ dialogInterface: DialogInterface, i: Int ->
 
                     }
-                    setNeutralButton("닫기"){ dialogInterface: DialogInterface, i: Int ->
 
-                    }
                 }.show()
 
             }
@@ -53,8 +54,7 @@ class MyInfoFragment : Fragment() {
                     setNegativeButton("아니오"){ dialogInterface: DialogInterface, i: Int ->
 
                     }
-                    setNeutralButton("닫기") { dialogInterface: DialogInterface, i: Int ->
-                    }
+
                 }.show()
 
             }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "778662772989",
+    "project_id": "howlook-601f4",
+    "storage_bucket": "howlook-601f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778662772989:android:68e02c89ad4ef1a97d7e94",
+        "android_client_info": {
+          "package_name": "com.test.howlook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4FC5lVguX3r7Xv9pba4ATSsZT03r_III"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
